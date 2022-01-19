@@ -18,7 +18,7 @@
 		};
 	};
 
-	/* TODO: Add psram1 & dsram2 to MEMORY layout of linker */
+	/* TODO: Add psram1 & sdram2 to MEMORY layout of linker */
 	psram1: memory@10000000 {
 		compatible = "mmio-sram";
 	};
@@ -27,7 +27,7 @@
 		compatible = "mmio-sram";
 	};
 
-	dsram2: memory@30000000 {
+	sdram2: memory@30000000 {
 		compatible = "mmio-sram";
 	};
 

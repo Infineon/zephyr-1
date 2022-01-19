@@ -1,0 +1,10 @@
+config ETHERNET_XMC4500
+	bool "XMC 4500 Ethernet driver"
+	default y
+	help
+	  This module implements a kernel device driver for  XMC Ethernet driver.
+config PTP_CLOCK_XMC4500
+	bool "XMC 4500 Ethernet ptp driver"
+	default y
+	help
+	  This module implements a kernel ptp device driver for  XMC Ethernet driver.

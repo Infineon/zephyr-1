@@ -21,6 +21,18 @@
 		zephyr,console = &usic1ch1;
 		zephyr,shell-uart = &usic1ch1;
 	};
+
+	soc {
+
+		xethernet: ethernet@5000c000 {
+			compatible = "infineon,xmc-ethernet";
+			reg = <0x5000c000 0x105c>;
+			interrupts = <108 0>;
+			status = "okay";
+			label = "xmc4500_ethernet";
+		};
+
+	};
 };
 
 &cpu0 {
@@ -38,5 +50,17 @@
 	compatible = "infineon,xmc4xxx-uart";
 	current-speed = <115200>;
 	label = "UART_0";
+	status = "okay";
+};
+
+&sdram2 {
+	status = "okay";
+};
+
+&psram1 {
+	status = "okay";
+};
+
+&dsram1 {
 	status = "okay";
 };

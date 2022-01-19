@@ -5,3 +5,4 @@
 
 zephyr_sources(soc.c)
 zephyr_linker_sources(NOINIT noinit.ld)
+zephyr_linker_sources(SECTIONS ETH_RAM.ld)

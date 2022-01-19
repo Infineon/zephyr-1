@@ -1,0 +1,13 @@
+description: XMC Ethernet
+
+compatible: "infineon,xmc-ethernet"
+
+include: ["ethernet.yaml", "ethernet,fixed-link.yaml"]
+
+properties:
+    reg:
+      required: true
+    interrupts:
+      required: true
+    label:
+      required: true
